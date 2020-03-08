@@ -1,0 +1,22 @@
+.about {
+    padding-top: 6vh;
+    height: 100vh;
+    background-image: url("../img/bg1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.card {
+    width: 80%;
+}
+.profiles {
+    width: 10vw;
+    clip-path: polygon(50% 0, 100% 0, 100% 35%, 100% 70%, 76% 86%, 50% 100%, 0 100%, 0% 70%, 0% 35%, 25% 18%);
+}
+#title {
+    color: blanchedalmond;
+    height: 2vh;
+}

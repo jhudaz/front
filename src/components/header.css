@@ -1,6 +1,16 @@
-.justify-content-end {
-   height: 8vh;
+.head {
    display: flex;
-   background-color: rgba(19, 102, 105, 0.596);
-
+   align-content: center;
+   justify-content: space-between;
+   height: 10vh;
+   background-color: rgb(0, 0, 0);
+}
+.justify-content-end {
+   display: flex;
+   align-content: center;
+}
+#logo {
+   padding-left: 20px;
+   height: 10vh;
+   background-color: rgb(0, 0, 0);
 }
