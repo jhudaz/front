@@ -42,3 +42,16 @@
     width: 100px;
     clip-path: polygon(50% 0, 100% 0, 100% 35%, 100% 70%, 76% 86%, 50% 100%, 0 100%, 0% 70%, 0% 35%, 25% 18%);
 }
+
+@media (max-width:1050px) {
+    .container {
+        justify-content: center;
+    }
+}
+@media (max-width:768px) {
+    .container .card {
+        width: 100%;
+        height: auto;
+        padding: 30p 20px;
+    }
+}
