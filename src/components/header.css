@@ -1,19 +1,12 @@
-.head {
-   display: flex;
-   align-content: center;
-   justify-content: space-between;
-   height: 10vh;
-   background-color: #1c2431;
+.navbar {
+   position: fixed;
+   top:0;
+   height: 13vh;
+   background-color: #131e25;
 }
-.justify-content-end {
-   display: flex;
-   align-content: center;
-}
-.nav-item a{
+.nav-link{
    color: aqua;
 }
 #logo {
-   padding-left: 20px;
-   height: 10vh;
-   background-color: #1c2431;
+   width: 40%;
 }

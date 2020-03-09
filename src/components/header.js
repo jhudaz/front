@@ -1,21 +1,19 @@
-import React from 'react';
-import { Nav } from 'react-bootstrap';
-import './header.css'
-import logo from '../img/logo3.png';
+import React from "react";
+import { Navbar, Nav } from "react-bootstrap";
+import "./header.css";
+import logo from "../img/logo3.png";
 function Header() {
-
   return (
-    <header className="head">
-      <img id="logo" src={logo} alt="logo" />
-      <Nav className="justify-content-end">
-        <Nav.Item>
+    <Navbar expand="lg" className="navbar">
+      <Navbar.Brand href="#home"><img id="logo" src={logo} alt="logo"/></Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mr-auto">
           <Nav.Link href="#formComponent">Home</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
           <Nav.Link href="#aboutComponent">About</Nav.Link>
-        </Nav.Item>
-      </Nav>
-    </header>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 }
 
