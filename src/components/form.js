@@ -4,7 +4,7 @@ import './form.css'
 
 function Forms() {
   return (
-    <Container className="form" fluid>
+    <Container className="form" fluid id="formComponent">
       <Row>
         <Col md={4}></Col>
         <Col md={4}>

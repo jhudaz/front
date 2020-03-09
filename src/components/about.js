@@ -41,7 +41,7 @@ function About() {
         {
           team.map(user => {
             return (
-              <Col md={4} className="container">
+              <Col md={4} className="container" id="aboutComponent">
                 <Card className="card">
                   <Card.Body className="content">
                     <Card.Title className="title">{user.name}</Card.Title>

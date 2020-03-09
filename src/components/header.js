@@ -7,12 +7,12 @@ function Header() {
   return (
     <header className="head">
       <img id="logo" src={logo} alt="logo" />
-      <Nav className="justify-content-end" activeKey="/home">
+      <Nav className="justify-content-end">
         <Nav.Item>
-          <Nav.Link href="/home">Home</Nav.Link>
+          <Nav.Link href="#formComponent">Home</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="link-1">About</Nav.Link>
+          <Nav.Link href="#aboutComponent">About</Nav.Link>
         </Nav.Item>
       </Nav>
     </header>
