@@ -3,14 +3,17 @@
    align-content: center;
    justify-content: space-between;
    height: 10vh;
-   background-color: rgb(0, 0, 0);
+   background-color: #1c2431;
 }
 .justify-content-end {
    display: flex;
    align-content: center;
 }
+.nav-item a{
+   color: aqua;
+}
 #logo {
    padding-left: 20px;
    height: 10vh;
-   background-color: rgb(0, 0, 0);
+   background-color: #1c2431;
 }

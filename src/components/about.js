@@ -37,19 +37,16 @@ function About() {
   ]
   return (
     <Container className="about" fluid>
-      <Row id="title">
-        <h3>Team</h3>
-      </Row>
       <Row>
         {
           team.map(user => {
             return (
-              <Col md={4}>
-                <Card>
-                  <Card.Body>
+              <Col md={4} className="container">
+                <Card className="card">
+                  <Card.Body className="content">
                     <Card.Title>{user.name}</Card.Title>
-                    <img class="profiles" src={user.picture} alt="Profile pic"/>
-                    <Card.Text>{user.description}</Card.Text>
+                    <img className="pic" src={user.picture} alt="profile"></img>
+                    <Card.Text class="description">{user.description}</Card.Text>
                     <a href={user.gitHub} target="new_blank"><img src={git} alt="Github"/></a>
                     <a href={user.twitter} target="new_blank"><img src={tweet} alt="Twitter"/></a>
                     <a href={user.linkedIn} target="new_blank"><img src={link} alt="LinkedIn"/></a>
