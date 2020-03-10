@@ -4,7 +4,7 @@ import { Table } from 'react-bootstrap';
 function Results() {
     return (
       <div className="results">
-        <Table striped bordered hover variant="dark">
+        <Table striped bordered hover responsive variant="dark" size="sm">
 				  <thead>
 				    <tr>
 				      <th>#</th>
