@@ -1,11 +1,8 @@
 .navbar {
-   position: fixed;
-   top:0;
-   height: 13vh;
-   background-color: #131e25;
+   display: flex;
 }
-.nav-link{
-   color: aqua;
+.navbar-nav .nav-link {
+   color: aqua !important;
 }
 #logo {
    width: 40%;

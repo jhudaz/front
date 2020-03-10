@@ -28,7 +28,7 @@ function About() {
     },
     {
       name: 'Darwin Soto',
-      description: 'Mechatronics engineer, programming passionate, and student Holberton School.',
+      description: 'Mechatronics engineer, programming passionate, and student at Holberton School.',
       picture: profile3,
       gitHub: 'https://github.com/Daransoto',
       twitter: 'https://twitter.com/darutos',
@@ -41,7 +41,7 @@ function About() {
         {
           team.map(user => {
             return (
-              <Col md={4} className="container" id="aboutComponent">
+              <Col md={4} className="container" id="about">
                 <Card className="card">
                   <Card.Body className="content">
                     <Card.Title className="title">{user.name}</Card.Title>
