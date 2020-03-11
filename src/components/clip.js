@@ -1,5 +1,4 @@
 import React from 'react';
-import { Badge } from 'react-bootstrap';
 import './clip.css'
 
 function Clip() {

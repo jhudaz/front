@@ -1,11 +1,24 @@
-import React from 'react';
-import Loader from './loader';
-import Clip from './clip';
-import Results from './results'
-import { Form, Button, Container, Row, Col } from 'react-bootstrap';
-import './form.css'
+import React from "react";
+//import Loader from './loader';
+import Clip from "./clip";
+//import Results from './results'
+import { Form, Container, Button ,Row, Col } from "react-bootstrap";
+import FacebookLogin from "react-facebook-login/dist/facebook-login-render-props";
+import axios from 'axios';
+import "./form.css";
 
 function Forms() {
+  const responseFacebook = response => {
+    let apiData = {
+      url: document.getElementById('urltext').value,
+      access_token: response.accessToken
+    }
+    console.log('data a mandar', apiData)
+    axios.post('http://35.237.105.68/catch', apiData)
+      .then(res => {
+        console.log(res);
+      })
+  };
   return (
     <Container className="form" fluid id="home">
       <Row>
@@ -13,23 +26,29 @@ function Forms() {
         <Col md={4}>
           <Form>
             <Form.Group controlId="formBasicEmail">
-              <Form.Label><h3>Place your url</h3></Form.Label>
-              <Form.Control type="url" placeholder="https://www.example.com"/>
+              <Form.Label>
+                <h3>Place your url</h3>
+              </Form.Label>
+              <Form.Control id="urltext" type="url" placeholder="https://www.facebook.com" />
             </Form.Group>
-            <Button variant="primary" size="lg" block>
-              Submit
-            </Button>
+
+            <FacebookLogin
+              appId="2269795789988854"
+              callback={responseFacebook}
+              render={renderProps => (
+                <Button lg onClick={renderProps.onClick}>
+                  Aunthenticate
+                </Button>
+              )}
+            />
           </Form>
         </Col>
         <Col md={4}>
-          <Clip/>
+          <Clip />
         </Col>
       </Row>
-        
-      <Row>
-        
-      </Row>
 
+      <Row></Row>
     </Container>
   );
 }

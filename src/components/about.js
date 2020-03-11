@@ -46,7 +46,7 @@ function About() {
                   <Card.Body className="content">
                     <Card.Title className="title">{user.name}</Card.Title>
                     <img className="profiles" src={user.picture} alt="profile"></img>
-                    <Card.Text class="description">{user.description}</Card.Text>
+                    <Card.Text className="description">{user.description}</Card.Text>
                     <a href={user.gitHub} target="new_blank"><img src={git} alt="Github"/></a>
                     <a href={user.twitter} target="new_blank"><img src={tweet} alt="Twitter"/></a>
                     <a href={user.linkedIn} target="new_blank"><img src={link} alt="LinkedIn"/></a>
