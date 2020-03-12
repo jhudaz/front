@@ -13,8 +13,7 @@ function Forms() {
       url: document.getElementById('urltext').value,
       access_token: response.accessToken
     }
-    console.log('data a mandar', apiData)
-    axios.post('http://35.237.105.68/catch', apiData)
+    axios.post('https://web-02.darwinsoto.tech/catch', apiData)
       .then(res => {
         console.log(res);
       })
